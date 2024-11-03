@@ -1,6 +1,6 @@
-class Movies < ApplicationController
+class MoviesController < ApplicationController
   def index
-    render({ :template => "movie_template/list"})
+    render({ :template => "movie_templates/list"})
   end
 
 

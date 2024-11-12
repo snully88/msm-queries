@@ -1,4 +1,7 @@
 class MoviesController < ApplicationController
+  validates(:director_id, presence: true)
+  validates(:title, uniqueness: true)
+end
   def index
     render({ :template => "movie_templates/list"})
   end
